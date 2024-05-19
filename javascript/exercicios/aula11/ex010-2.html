@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro? - Aula 11</title>
+    <style>
+
+        body {
+            font: normal 12pt arial;
+            background-color: green;
+            color: rgb(0, 0, 140);
+        }
+
+        #box {
+            width: 400px;
+            height: 280px;
+
+            text-align: center;
+
+            padding: 30px;
+
+            border: 2px solid black;
+            border-radius: 25px;
+
+            background-color: yellow;
+
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        #txtps {
+            margin-left: 2px;
+            border: 1px solid blue; 
+        }
+
+        .btn {
+            background-color: blue;
+            color: white;
+
+            border-radius: 10px;
+
+            margin: 10px 0px 10px 0px;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+        <h1>Qual seu país?</h1>
+
+        Digite seu país aqui:
+        <input name="txtps" id="txtps">
+
+        <br>
+
+        <input class="btn" type="button" value="Verificar" onclick="verificar()">
+
+        <div id="res"></div>
+    <script>
+
+        function verificar() {
+            var país = window.document.getElementById('txtps')
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = `Você mora no ${país}`
+        }
+       
+
+    </script>
+    
+</body>
+</html>

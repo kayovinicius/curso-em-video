@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM - Aula 10</title>
+    <style>
+        body {
+            background-color: rgba(37, 13, 72, 0.823);
+        }
+
+        div#area {
+            font: normal 16pt monospace;
+            background-color: indigo;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 15px;
+            border: 3px solid black;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.350);
+
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        /*
+        div#area:hover {
+            background-color: rgb(80, 15, 146);
+            box-shadow: 0px 0px 20px rgba(125, 48, 202, 0.798);
+        }
+        */
+
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+    </div>
+    
+    <script>
+        var a = document.getElementById('area')
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'darkviolet'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'indigo'
+        }
+
+
+
+    </script>
+
+</body>
+</html>

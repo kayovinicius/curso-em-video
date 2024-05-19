@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM - Aula 9</title>
+    <style>
+        body {
+            background-color: darkslategray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+    <br><br>
+
+    <script>
+
+        var corpo = window.document.body 
+        var p1 = window.document.getElementsByTagName('p')[1] // por Tag Name
+        
+        /*
+        var d1 = window.document.getElementById('msg') // por Id
+        d1.innerText = 'Mudei kkkk'
+        d1.style.background = 'darkgreen'
+        */
+
+        /*
+        var d2 = window.document.getElementsByName('msg')[0]
+        d2.innerText = 'oi'
+        */
+
+        /*
+        var d3 = window.document.getElementsByClassName('msg')[0]
+        d3.innerText = 'AAAAAFFF'
+        */
+
+        /*
+        var d3 = window.document.querySelector('div.msg')
+        d3.style.color = 'purple'
+        */
+       
+    </script>
+    
+</body>
+</html>
