@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 143, 143);
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: coral;
+        }
+
+        .especial:hover {
+            color: whitesmoke;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content: '>>';
+            font-weight: lighter;
+        }
+
+        .especial::after {
+            content: '<<';
+            font-weight: lighter;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando um Link</h1>
+
+    <p>
+        Para escutar uma música boa acesse:
+        <a href="https://www.youtube.com/watch?v=wbaUJZznRCw&list=TLPQMTUwODIwMjK34P3sHIrn-A&index=3" target="_blank">
+            Toca em mim denovo 2.0 - Vígilia dos Asafe
+        </a>
+    </p>
+
+    <p>
+        Se quiser adorar a Deus acesse essa música:
+        <a href="https://www.youtube.com/watch?v=BcC5y22M-hI&list=TLPQMTUwODIwMjK34P3sHIrn-A&index=4" target="_blank">
+            Santo dos Santos - Paloma Possi
+        </a>
+    </p>
+
+    <p>
+        Se quiser dançar um groove clique nesse link:
+        <a href="https://www.youtube.com/watch?v=BrV-DBhUkTk" class="especial" target="_blank">
+            Pela Fé - Eli Soares
+        </a>
+    </p> 
+</body>
+</html>
