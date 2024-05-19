@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Situação do Aluno</title>
+</head>
+<body>
+
+    <h1>Situação do Aluno</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Entrar com as notas</p>
+    </div>
+
+    <div id="res">
+        <p>Clique no botão acima para informar as notas do aluno</p>
+    </div>
+
+    <script>
+
+        function clicar() {
+
+            var res = document.getElementById('res')
+
+            //informações do aluno
+            var nome = prompt('Qual é o nome do aluno?')
+
+            var n1 = parseFloat(prompt(`Primeira nota de ${nome}:`))
+            var n2 = parseFloat(prompt(`Segunda nota de ${nome}:`))
+
+            var media = parseFloat((n1+n2)/2)
+
+            //mostrando resposta para o usuario
+            res.innerHTML = `<h2>Analisando a situação de ${nome}</h2>`
+
+            res.innerHTML += `<p>Com as notas ${n1} e ${n2}, a <strong>média é ${media}</strong></p>`
+
+            //analisando situação do aluno
+            if (media < 3.0) { //REPROVADO
+                res.innerHTML += `<p>Com média abaixo de 3,0, o aluno está <mark class=red><strong>REPROVADO</strong></mark></p>` 
+
+            } else if (media >= 3.0 && media <= 6.0) { //RECUPERAÇÃO
+                res.innerHTML += `<p>Com média entre 3,0 e 6,0, o aluno está em <mark class=yel><strong>RECUPERAÇÃO</strong></mark></p>`
+
+            } else { //APROVADO
+                res.innerHTML += `<p>Com média acima de 6,0, o aluno está em <mark class=green><strong>APROVADO</strong></mark></p>`                 
+
+            }    
+        }
+    </script>
+</body>
+</html>

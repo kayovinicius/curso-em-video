@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversão de Medidas</title>
+</head>
+<body>
+
+    <h1>Conversor de Medidas</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Converter</p>
+    </div>
+
+    <div id="res">
+        <p class="des">Clique no botão acima para iniciar</p>
+    </div>
+
+    <script>
+
+        function clicar() {
+
+            var res = document.getElementById('res')
+
+            var m = parseFloat(prompt('Digite uma distância em metros (m)'))
+
+            res.innerHTML = `<p class='des'>A distância de ${m.toFixed(2)} metros, corresponde a...</p>`
+
+            res.innerHTML += `<p>${m.toFixed(2)/1000} quilômetros (Km)</p>`
+            res.innerHTML += `<p>${m.toFixed(2)/100} hectômetros (Hm)</p>`
+            res.innerHTML += `<p>${m.toFixed(2)/10} decâmetro (Dam)</p>`
+            res.innerHTML += `<p>${m.toFixed(2)*10} decímetros (dm)</p>`
+            res.innerHTML += `<p>${m.toFixed(2)*100} centímetros (cm)</p>`
+            res.innerHTML += `<p>${m.toFixed(2)*1000} milímetros (mm)</p>`
+        }
+
+    </script>
+    
+</body>
+</html>

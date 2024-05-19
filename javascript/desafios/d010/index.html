@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fórmula de Bhaskara</title>
+</head>
+<body>
+
+    <h1>Resolvendo Bhaskara</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Calcular</p>
+    </div>
+
+    <div id="res">
+        <p>Considerando uma equação no formato <strong><em>ax<sup>2</sup> + bx + c = 0</em></strong>, aperte <br>o botão acima para calcular o valor de &Delta;</p>
+    </div>
+
+    <script>
+
+        function clicar() {
+
+            var res = document.getElementById('res')
+
+            //incognatas
+            var a = prompt('Qual o valor de a')
+
+            var b = prompt('Qual o valor de b')
+
+            var c = prompt('Qual o valor de c')
+
+            //cálculo do delta
+            var del = b**2 - 4*a*c
+
+            //resposta
+            res.innerHTML = '<h2>Resolvendo Bhaskara</h2>'
+
+            res.innerHTML += `<p>A equação atual é <strong>${a}x<sup>2</sup> + ${b}x + ${c} = 0</strong></p>`
+
+            res.innerHTML += `<p>O cálculo realizado será <strong>&Delta; = ${b}<sup>2</sup> - 4 . ${a} . ${c}</strong></p>`
+
+            res.innerHTML += `<p>o valor calculado foi <strong><mark>&Delta; = ${del}</mark></strong></p>`
+            
+        }
+
+    </script>
+    
+</body>
+</html>

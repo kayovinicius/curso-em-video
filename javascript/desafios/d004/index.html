@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcula Troco</title>
+</head>
+<body>
+
+    <h1>Calculando o Troco</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Comprar produto</p>
+    </div>
+
+    <script>
+
+        function clicar() {
+            var produto = prompt('Que produto você está comprando?')
+
+            var valorProduto = parseFloat(prompt(`Quanto custa '${produto}' que você está comprando?`))
+
+            var valorPago = parseFloat(prompt(`Qual foi o valor que você deu para pagar '${produto}'?`))
+
+            if (valorPago < valorProduto) {
+                alert('O valor para pagamento do produto é Insuficiente!!')
+            } else {
+                var troco = valorPago - valorProduto
+
+                alert(`Você comprou ${produto} que custou ${valorProduto.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} \nDeu ${valorPago.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em dinheiro e vai receber R$ ${troco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} de troco. \nVolte Sempre!`)
+            }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

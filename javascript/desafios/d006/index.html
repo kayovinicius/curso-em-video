@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de temperatura</title>
+</head>
+<body>
+
+    <h1>Conversor de Medidas</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Converter</p>
+    </div>
+
+    <div id="res">
+        <p class="des">Clique no botão acima para iniciar</p>
+    </div>
+
+    <script>
+
+        function clicar() {
+
+            var res = document.getElementById('res')
+
+            var c = parseFloat(prompt('Digite uma temperatura em ºC (Celsius)'))
+            var k = c + 273
+            var f = c * 1.8 + 32
+
+            res.innerHTML = `<p class="des">A temperatura de ${c}ºC, corresponde a...</p>`
+
+            res.innerHTML += `<p>${k.toFixed(2)}ºK (Kelvin)</p>`
+            res.innerHTML += `<p>${f.toFixed(2)}ºF (Fahrenheit)</p>`
+            
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Preço mudou</title>
+</head>
+<body>
+
+    <h1>Preço mudou</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Veificar</p>
+    </div>
+
+    <div id="res">
+        <p>Clique no botão acima para analisar a mudança de preço.</p>
+    </div>
+
+    <script>
+
+        function clicar() {
+            
+            var res = document.getElementById('res')
+
+            //coletando preços
+            var precoAnterior = parseFloat(prompt('Qual era o preço anterior do produto?'))
+            var precoAtual = parseFloat(prompt('Qual é o preço atual do produto?'))
+
+            //vamos as analises...
+            res.innerHTML = '<h2>Analisando os valores informados.</h2>'
+
+            if (precoAtual < precoAnterior) { //então preço caiu
+
+                res.innerHTML += `<p>O produto custava ${precoAnterior.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e agora custa ${precoAtual.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</p>`
+
+                //cálculos...
+                var caiu = parseFloat(precoAnterior - precoAtual)
+                var variacao = parseFloat((precoAnterior-precoAtual)/precoAtual*100) //fórmula da variação percentual
+
+                //apresntando os resultados para o usuario
+                res.innerHTML += '<p>Hoje o produto está mais barato.</p>'
+
+                res.innerHTML += `<p>O preço caiu ${caiu.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.</p>`
+
+                res.innerHTML += `<p>Uma variação de ${variacao.toFixed(2)}% pra baixo.</p>`
+
+            } else { //preço subiu
+
+                res.innerHTML += `<p>O produto custava ${precoAnterior.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e agora custa ${precoAtual.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</p>`
+
+                //cálculos...
+                var subiu = parseFloat(precoAtual - precoAnterior)
+                var variacao = parseFloat((precoAtual-precoAnterior)/precoAnterior*100) //fórmula da variação percentual
+
+                ////apresntando os resultados para o usuario
+                res.innerHTML += '<p>Hoje o produto está mais caro.</p>'
+
+                res.innerHTML += `<p>O preço subiu ${subiu.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.</p>`
+
+                res.innerHTML += `<p>Uma variação de ${variacao.toFixed(2)}% pra cima.</p>`
+
+            }
+        }
+
+        // UMA IDEIA :)
+        
+        // Fazer duas variáveis para armazenar os preços maiores e menores, 
+        // talvez dessa forma fique mais claro identificar as variações
+        // no código. algo como:
+        //    if (precoAtual > precoAnterior) {
+        //       var maior = parseFloat(precoAtual)
+        //       var menor = parseFloat(precoAnterior)   
+        //    } else { 
+        //       var maior = parseFloat(precoAnterior)
+        //       var menor = parseFloat(precoAtual)    
+        //    }
+        
+    </script>
+    
+</body>
+</html>

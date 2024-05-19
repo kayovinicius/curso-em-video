@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Dinheiro</title>
+</head>
+<body>
+
+    <h1>Conversor R$ -> US$</h1>
+
+    <div class="btn" onclick="clicar()">
+        <p>Converter</p>
+    </div>
+
+    <div id="res">
+        <p>Clique no botão acima para iniciar</p>
+    </div>
+
+    <script>
+
+        var dolar = parseFloat(prompt('Antes de mais nada. Quanto está a cotação do dólar agora?'))
+
+        function clicar() {
+            
+            var res = document.getElementById('res')
+
+            var real = parseFloat(prompt('Quantos R$ você tem na carteira?'))
+
+            var conv = parseFloat(real/dolar)
+
+            res.innerHTML = `<p>Você pode comprar ${conv.toFixed(2)} dólares com a quantidade de R$ que possuí</p>`
+
+        }
+
+    </script>
+    
+</body>
+</html>
