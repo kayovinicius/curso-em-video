@@ -2,7 +2,7 @@ aquivos do curso de **html&css** e **javascript** que fiz pelo **curso em vídeo
  
 ## HTML-CSS
 ### Exercícios
-- [Meu primeiro exercício - ex001](https://kayovinicius.github.io/curso-em-video/html-css/exercicios/ex001/)
+- ![Meu primeiro exercício - ex001](https://kayovinicius.github.io/curso-em-video/html-css/exercicios/ex001/)
 - Exercício 2
 - ...
 
