@@ -45,9 +45,17 @@ aquivos do curso de **html&css** e **javascript** que fiz pelo **curso em vídeo
 - [Tabelas Responsivas](https://kayovinicius.github.io/curso-em-video/html-css/exercicios/ex023/tabela006.html)
 
 ### Desafios
-- Desafio 1
-- Desafio 2
-- ...
+- [Mensagens](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d001/)
+- [Emojis](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d004/)
+- [Mini Portfólio](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d005/)
+- [Tags HTML](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d006/)
+- [Navegação](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d008/)
+- [Responsividade](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d010/responsividade.html)
+- [Desafio Astronauta](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d011/)
+- [Projeto Cordel](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d012/)
+- [Desafio Tabela 1](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d013/tabela01.html)
+- [Desafio Tabela 2](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d013/tabela02.html)
+- [Desafio Tabela 3](https://kayovinicius.github.io/curso-em-video/html-css/desafios/d014/)
 
 ## JAVASCRIPT
 ### Exercícios
