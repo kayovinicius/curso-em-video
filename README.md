@@ -59,9 +59,20 @@ aquivos do curso de **html&css** e **javascript** que fiz pelo **curso em vídeo
 
 ## JAVASCRIPT
 ### Exercícios
-- Exercício 1
-- Exercício 2
-- ...
+- [Códigos iniciais 1](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula04/ex001.html)
+- [Códigos iniciais 2](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula06/ex002.html)
+- [Códigos iniciais 3](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula06/ex003.html)
+- [Placehoader](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula06/ex004.html)
+- [Primeiros passos com DOM](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula09/ex005.html)
+- [Eventos DOM](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula10/ex006.html)
+- [Somando números](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula10/ex007.html)
+- [Detran](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula11/ex010.html)
+- [Brasileiro?](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula11/ex010-2.html)
+- [Hora do dia](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula12ex/ex014/modelo.html)
+- [Verificador de idade](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula12ex/ex015/modelo.html)
+- [Contagem](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula14ex/ex016/modelo.html)
+- [Tabuada](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula14ex/ex017/modelo.html)
+- [Analisador de números](https://kayovinicius.github.io/curso-em-video/javascript/exercicios/aula16ex/ex18/modelo.html)
 
 ### Desafios
 - Desafio 1
